@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    int n = s.nextInt();
+	    for(int i = 0; i<n; i++){
+	        int p = s.nextInt();
+	        int rev = 0;
+	        while(p!=0){
+	            int temp = p%10;
+	            rev = rev*10 + temp;
+	            p = p/10;
+	        }
+	        System.out.println(rev);
+	        
+	        
+	        
+	    }
+	    
+	}
+}
+
+
+
+
+output:
+1
+12345
+54321

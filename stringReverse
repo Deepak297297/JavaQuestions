@@ -1,0 +1,17 @@
+//using sting builder
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String input = "Deepak";
+	    StringBuilder str = new StringBuilder(input);
+	    str.reverse();
+	    String result = str.toString();
+	    System.out.println(result);
+	    
+	}
+}
+
+
+output:-
+kapeeD

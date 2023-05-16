@@ -13,5 +13,20 @@ public class Main
 }
 
 
+
 output:-
 kapeeD
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    String a = sc.next();
+	    StringBuilder str = new StringBuilder(a);
+	    str.reverse();
+	    String result = str.toString();
+	    System.out.println(str);
+	}
+}

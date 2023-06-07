@@ -20,3 +20,6 @@ public class Main{
 	    
 	}
 }
+
+
+//timecomplexity = n^2

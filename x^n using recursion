@@ -1,0 +1,52 @@
+// stack height = n;
+// method 1;
+
+import java.util.*;
+public class Main{
+    public static int power(int x, int n){
+        if(n==0){
+            return 1;
+        }
+        if(x==0){
+            return 0;
+        }
+        int a = power(x, n-1);
+        int b = x*a;
+        return b;
+        
+    }
+	public static void main(String[] args) {
+		int x=2;
+		int n = 5;
+		int ans = power(x, n);
+		System.out.println(ans);
+	}
+}
+
+
+// 2nd Method 
+//stack height = logn
+
+import java.util.*;
+public class Main{
+    public static int power(int x, int n){
+        if(n==0){
+            return 1;
+        }
+        if(x==0){
+            return 0;
+        }
+        if(n%2==0){
+            return power(x,n/2) * power(x,n/2);
+        }else{
+            return power(x,n/2)*power(x,n/2)*x;
+        }
+        
+    }
+	public static void main(String[] args) {
+		int x=2;
+		int n = 5;
+		int ans = power(x, n);
+		System.out.println(ans);
+	}
+}
